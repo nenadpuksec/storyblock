@@ -3,10 +3,10 @@
     <div>
       <app-logo/>
       <h1 class="title">
-        storyblock-blog
+        storyblock-blog1
       </h1>
       <h2 class="subtitle">
-        First Nuxt 
+        First Nuxt
       </h2>
       <div class="links">
         <a
