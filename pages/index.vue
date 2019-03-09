@@ -3,7 +3,7 @@
     <div>
       <app-logo/>
       <h1 class="title">
-        storyblock-blog1
+        storyblock-blog
       </h1>
       <h2 class="subtitle">
         First Nuxt
