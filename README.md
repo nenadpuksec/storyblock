@@ -1,6 +1,8 @@
 # storyblock-blog
 
-> First Nuxt 
+> Story Block
+ Nuxt, Vue 
+ Yhe project is under construction.
 
 ## Build Setup
 
