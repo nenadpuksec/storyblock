@@ -1,40 +1,63 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        storyblock-blog
-      </h1>
-      <h2 class="subtitle">
-        First Nuxt
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
+  <section id="posts">
+    <PostPreview
+      v-for="post in posts"
+      :key="post.id"
+      :title="post.title"
+      :excerpt="post.previewText"
+      :thumbnailImage="post.thumbnailUrl"
+      :id="post.id"
+    />
   </section>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+import PostPreview from '@/components/Blog/PostPreview';
 
 export default {
-  components: {
-    AppLogo
+  components:{
+    PostPreview
+  },
+  data(){
+    return{
+      posts:[
+        {
+          title:'A new Beginning',
+          previewText: 'This will be awesome, dont miss it!',
+          thumbnailUrl: 'https://d2lhw32459hxui.cloudfront.net/files/uploads/drupal/uploads/2016/12/tastyfoods.png',
+          id: 'a-new-beginning'
+        },
+        {
+          title:'A Second Beginning',
+          previewText: 'This will be awesome, dont miss it!',
+          thumbnailUrl: 'https://image.winudf.com/v2/image/Y29tLmhhYmliaS5UYXN0eWFuZFl1bW15Rm9vZFJlY2lwZV9zY3JlZW5fOF8xNTE0MTkwNzYwXzA3OA/screen-8.jpg?h=800&fakeurl=1&type=.jpg',
+          id: 'a-second-beginning'
+        }
+      ]
+    }
   }
 }
 </script>
 
+<style scoped>
+  #posts{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @media (min-width: 35rem) {
+    #posts{
+      flex-direction: row;
+    }
+  }
+</style>
+
 <style>
 .container {
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
