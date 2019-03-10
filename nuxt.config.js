@@ -1,4 +1,6 @@
 module.exports = {
+  mode: "universal",
+
   /*
   ** Headers of the page
   */
@@ -14,27 +16,59 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:400,700' }
     ]
   },
+
   /*
-  ** Customize the progress bar color
+  ** Customize the progress-bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: "#3B8070" },
+
+  /*
+  ** Global CSS
+  */
+  css: [],
+
+  /*
+  ** Plugins to load before mounting the App
+  */
+  plugins: [],
+
+  /*
+  ** Nuxt.js modules
+  */
+  modules: [
+    // Doc: https://github.com/nuxt-community/axios-module#usage
+    [
+      "storyblok-nuxt",
+      { accessToken: "b3BOCSSy6J4wiyeJmov3iQtt", cacheProvider: "memory" }
+    ]
+  ],
+
+  /*
+  ** Axios module configuration
+  */
+  axios: {
+    // See https://github.com/nuxt-community/axios-module#options
+  },
+
   /*
   ** Build configuration
   */
   build: {
     /*
-    ** Run ESLint on save
+    ** You can extend webpack config here
     */
-    extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
+    extend(config, ctx) {
+      // Run ESLint on save
+      if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
-          enforce: 'pre',
+          enforce: "pre",
           test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
+          loader: "eslint-loader",
           exclude: /(node_modules)/
-        })
+        });
       }
     }
   }
-}
+};
+
 
