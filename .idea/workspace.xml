@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc04487d-43a1-4ef5-8380-e0e36d8f32e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/blog/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Blog/PostPreview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Blog/PostPreview.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TheHeader/TheHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/TheHeader/TheHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_postId/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog/_postId/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
-    </list>
+    <list default="true" id="fc04487d-43a1-4ef5-8380-e0e36d8f32e6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -211,7 +201,7 @@
       <workItem from="1552502152542" duration="724000" />
       <workItem from="1552945821435" duration="7552000" />
       <workItem from="1553369655042" duration="50000" />
-      <workItem from="1553369899915" duration="4201000" />
+      <workItem from="1553369899915" duration="5573000" />
     </task>
     <task id="LOCAL-00001" summary="Commit test">
       <created>1551915785335</created>
@@ -255,16 +245,24 @@
       <option name="project" value="LOCAL" />
       <updated>1552430093518</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Routing, generating...">
+      <created>1553374282560</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1553374282560</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36375000" />
+    <option name="totallyTimeSpent" value="37747000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1096" height="1896" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18146718" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18146718" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -277,7 +275,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3295519" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3295519" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -295,7 +293,8 @@
     <MESSAGE value="Post components and post preview" />
     <MESSAGE value="nuxt.cofing.js correction and first post from Storyblok" />
     <MESSAGE value="Single post preview" />
-    <option name="LAST_COMMIT_MESSAGE" value="Single post preview" />
+    <MESSAGE value="Routing, generating..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Routing, generating..." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pages/README.md">
