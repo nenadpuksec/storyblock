@@ -1,3 +1,5 @@
+const axios = require("axios");
+
 module.exports = {
   mode: "universal",
 
@@ -39,9 +41,30 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/axios-module#usage
     [
       "storyblok-nuxt",
-      { accessToken: "b3BOCSSy6J4wiyeJmov3iQtt", cacheProvider: "memory" }
+      { accessToken: process.env.NODE_ENV == "production "
+          ? "jrQFyrOPno9jwScXKgxMjAtt" //public
+          : "b3BOCSSy6J4wiyeJmov3iQtt", //preview
+        cacheProvider: "memory" }
     ]
   ],
+
+  generate: {
+    routes: function() {
+      return axios.get(
+        "https://api.storyblok.com/v1/cdn/stories?version=published&token=jrQFyrOPno9jwScXKgxMjAtt&starts_with=blog&cv=" +
+        Math.floor(Date.now() / 1e3)
+      )
+        .then(res => {
+          const blogPosts = res.data.stories.map(bp => bp.full_slug);
+          return [
+            '/',
+            '/blog',
+            '/about',
+            ...blogPosts
+          ]
+        });
+    }
+  },
 
   /*
   ** Axios module configuration
